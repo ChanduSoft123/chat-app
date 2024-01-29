@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rl-time - chat app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="Js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional CSS for child-friendly design */
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            height: 100vh;
+            background-image: linear-gradient(rgba(255, 255, 255), rgb(109, 39, 239));
+        }
+
+        /* Example CSS animation */
+        .message {
+            animation: slideIn 0.5s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Adjusting button styles */
+        .btn {
+            padding: 8px 16px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img class="logo" src="chatlogo.png" alt="">
+        <h1>Welcome to iDiscuss chat app</h1>
+    </nav>
+    <div class="container">
+        <div class="message left">start now</div>
+     </div> 
+        
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp">
+            <button class="btn" type="Submit">Send</button>
+        </form>
+    </div>
+   
+    
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rl-time - chat app</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="Js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>
+    <nav>
+        <img class="logo" src="chatlogo.png" alt="">
+        <h1>Welcome to iDiscuss chat app</h1>
+    </nav>
+    <div class="container">
+        <div class="message left"> 
+            How are you
+            <i class="fas fa-edit edit-icon"></i>
+            <i class="fas fa-trash-alt delete-icon"></i>
+            <i class="fas fa-file-upload document-icon"></i>
+        </div>
+        <div class="message right">  I am fine 😊</div>
+    </div>
+    <div class="send">
+        <form action="#"id="send-container">
+            <input type="text" name="messageInp"id="messageInp">
+            <button class="btn"type="Submit">Send</button>
+        </form>
+    </div>
+   
+</body>
+</html> -->
